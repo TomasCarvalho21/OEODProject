@@ -12,7 +12,6 @@ import pandas as pd
 from scipy.optimize import brute
 import yfinance as yf
 
-
 class EMA(object):
     ''' Class for the vectorized backtesting of EMA-based trading strategies.
 
