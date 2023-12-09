@@ -79,7 +79,7 @@ class EMA(object):
         ''' Backtests the trading strategy.
         '''
         data = self.data.copy().dropna()
-        data['position'] = np.where(data['EMA1'] > data['EMA2'], 1, -1)
+        data['position'] = np.where(data['EMA1'] > data['EMA2'], 1, 0)
         data['strategy'] = data['position'].shift(1) * data['return']
         data.dropna(inplace=True)
         data['creturns'] = data['return'].cumsum().apply(np.exp)
