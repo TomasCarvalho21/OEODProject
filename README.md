@@ -2,4 +2,7 @@
 
 Projeto de OEOD :)
 
-Dúvidas aqui:
+Dúvidas aqui:  
+- interpretção returns de RL
+- Buys > Sells
+- Função reward
